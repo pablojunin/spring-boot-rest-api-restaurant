@@ -1,0 +1,90 @@
+{
+	"variables": [],
+	"info": {
+		"name": "restaurant demo",
+		"_postman_id": "e411447a-d394-8745-a073-f49085d2193c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/restaurant/authenticate",
+			"request": {
+				"url": "localhost:8080/restaurant/authenticate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"username\":\"restaurant\",\n\"password\":\"password\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restaurant/api/v1/sales/current",
+			"request": {
+				"url": "http://localhost:8080/restaurant/api/v1/sales/current",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZXN0YXVyYW50IiwiZXhwIjoxNjExMDc4NTM3LCJpYXQiOjE2MTEwNjA1Mzd9.q1N7lrOBuUbTdt6ZeuDsSI9-vru1d7mU7FqksnNkXs4D89i4eG9UydDiSgJ0NE_MYD4-d2DuHZlacXY-LtuheQ",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restaurant/api/v1/sales",
+			"request": {
+				"url": "http://localhost:8080/restaurant/api/v1/sales",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZXN0YXVyYW50IiwiZXhwIjoxNjExMDc4NTM3LCJpYXQiOjE2MTEwNjA1Mzd9.q1N7lrOBuUbTdt6ZeuDsSI9-vru1d7mU7FqksnNkXs4D89i4eG9UydDiSgJ0NE_MYD4-d2DuHZlacXY-LtuheQ",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restaurant/api/v1/sales",
+			"request": {
+				"url": "http://localhost:8080/restaurant/api/v1/sales",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZXN0YXVyYW50IiwiZXhwIjoxNjExMDQwMzYzLCJpYXQiOjE2MTEwMjIzNjN9.Jn_cBJ804gKX68K6X4He6W1zPD4eCig1A7b7adQqM3RsGNGFyvFHdNIhegblOFshlREqcshlnP5pzZuaO4fR7g",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"description\": \"A litle description\",\n        \"billNumber\": 23456,\n        \"amount\": 200,\n        \"itemsQuantity\": 23,\n        \"dale\": \"2021-01-18\"\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
